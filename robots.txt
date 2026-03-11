@@ -1,0 +1,10 @@
+# robots.txt for Keshav Yadav Portfolio
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://keshavyadav.vercel.app/sitemap.xml
+
+# Disallow admin or private files (if any in future)
+# Disallow: /private/

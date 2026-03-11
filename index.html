@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Keshav Yadav - Full Stack Developer | Creative Portfolio</title>
+    <meta name="title" content="Keshav Yadav - Full Stack Developer | Creative Portfolio">
+    <meta name="description" content="Passionate full-stack developer specializing in React, Node.js, and modern web technologies. Building scalable and user-centric solutions.">
+    <meta name="keywords" content="Keshav Yadav, Full Stack Developer, Web Developer, React Developer, Node.js, Portfolio, Web Design">
+    <meta name="author" content="Keshav Yadav">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://keshavyadav.vercel.app/">
+    <meta property="og:title" content="Keshav Yadav - Full Stack Developer">
+    <meta property="og:description" content="Passionate full-stack developer specializing in React, Node.js, and modern web technologies.">
+    <meta property="og:image" content="https://keshavyadav.vercel.app/profile.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://keshavyadav.vercel.app/">
+    <meta property="twitter:title" content="Keshav Yadav - Full Stack Developer">
+    <meta property="twitter:description" content="Passionate full-stack developer specializing in React, Node.js, and modern web technologies.">
+    <meta property="twitter:image" content="https://keshavyadav.vercel.app/profile.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Performance -->
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Canvas for Three.js -->
+    <canvas id="webgl"></canvas>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2 class="loading-text">LOADING EXPERIENCE</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <span class="loading-percentage">0%</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="logo-text">KY</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link" data-text="Home">Home</a>
+            <a href="#about" class="nav-link" data-text="About">About</a>
+            <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+            <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+            <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+        </div>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">
+                        <span class="word">CREATIVE</span>
+                    </span>
+                    <span class="title-line">
+                        <span class="word">DEVELOPER</span>
+                    </span>
+                </h1>
+                <p class="hero-subtitle">Full-Stack Developer | Building Impactful Digital Solutions</p>
+                <div class="hero-name">
+                    <span class="name-bracket">&lt;</span>
+                    <span class="name-text">KESHAV YADAV</span>
+                    <span class="name-bracket">/&gt;</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#projects" class="cta-button primary">
+                    <span class="button-text">View My Work</span>
+                    <span class="button-icon">→</span>
+                </a>
+                <a href="#contact" class="cta-button secondary">
+                    <span class="button-text">Get In Touch</span>
+                    <span class="button-icon">✉</span>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a passionate full-stack developer specializing in building 
+                        <span class="highlight">modern web applications</span> that make a difference. 
+                        With expertise in React, Node.js, and cutting-edge technologies, I create 
+                        <span class="highlight">scalable and user-centric solutions</span> that solve real-world problems.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Projects</span>
+                            <span class="stat-number" data-target="10">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Repositories</span>
+                            <span class="stat-number" data-target="70">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Technologies</span>
+                            <span class="stat-number" data-target="40">0</span>
+                        </div>
+                    </div>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">📍</span>
+                            <span class="detail-text">Based in India</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">💼</span>
+                            <span class="detail-text">Open to Opportunities</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🎓</span>
+                            <span class="detail-text">Computer Science Student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-card">
+                        <img src="profile.jpg" alt="Keshav Yadav" class="profile-image">
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="tech-stack-grid">
+                    <!-- Frontend -->
+                    <div class="tech-category">
+                        <div class="tech-category-icon">🎨</div>
+                        <h3 class="tech-category-title">Frontend</h3>
+                        <div class="tech-items">
+                            <div class="tech-badge">React.js</div>
+                            <div class="tech-badge">Next.js</div>
+                            <div class="tech-badge">TypeScript</div>
+                            <div class="tech-badge">JavaScript</div>
+                            <div class="tech-badge">HTML5</div>
+                            <div class="tech-badge">CSS3</div>
+                            <div class="tech-badge">Tailwind CSS</div>
+                            <div class="tech-badge">Redux</div>
+                            <div class="tech-badge">Three.js</div>
+                            <div class="tech-badge">GSAP</div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="tech-category">
+                        <div class="tech-category-icon">⚙️</div>
+                        <h3 class="tech-category-title">Backend</h3>
+                        <div class="tech-items">
+                            <div class="tech-badge">Node.js</div>
+                            <div class="tech-badge">Express.js</div>
+                            <div class="tech-badge">Python</div>
+                            <div class="tech-badge">Django</div>
+                            <div class="tech-badge">REST API</div>
+                            <div class="tech-badge">GraphQL</div>
+                            <div class="tech-badge">Socket.io</div>
+                            <div class="tech-badge">JWT</div>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="tech-category">
+                        <div class="tech-category-icon">🗄️</div>
+                        <h3 class="tech-category-title">Database</h3>
+                        <div class="tech-items">
+                            <div class="tech-badge">MongoDB</div>
+                            <div class="tech-badge">PostgreSQL</div>
+                            <div class="tech-badge">MySQL</div>
+                            <div class="tech-badge">Redis</div>
+                            <div class="tech-badge">Firebase</div>
+                            <div class="tech-badge">Prisma ORM</div>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Tools -->
+                    <div class="tech-category">
+                        <div class="tech-category-icon">🚀</div>
+                        <h3 class="tech-category-title">DevOps & Cloud</h3>
+                        <div class="tech-items">
+                            <div class="tech-badge">Git</div>
+                            <div class="tech-badge">GitHub</div>
+                            <div class="tech-badge">Docker</div>
+                            <div class="tech-badge">AWS</div>
+                            <div class="tech-badge">Vercel</div>
+                            <div class="tech-badge">Netlify</div>
+                            <div class="tech-badge">Linux</div>
+                            <div class="tech-badge">CI/CD</div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="tech-category">
+                        <div class="tech-category-icon">🛠️</div>
+                        <h3 class="tech-category-title">Tools</h3>
+                        <div class="tech-items">
+                            <div class="tech-badge">VS Code</div>
+                            <div class="tech-badge">Figma</div>
+                            <div class="tech-badge">Postman</div>
+                            <div class="tech-badge">Git</div>
+                            <div class="tech-badge">NPM</div>
+                            <div class="tech-badge">Webpack</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-info">
+                        <span class="project-category">Full-Stack Application</span>
+                        <h3 class="project-title">Sampark</h3>
+                        <p class="project-description">
+                            A comprehensive communication and collaboration platform built with modern web technologies. 
+                            Features real-time messaging, user authentication, and responsive design.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Vercel</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://sampark-in.vercel.app" target="_blank" class="project-link">View Project</a>
+                            <a href="https://github.com/keshavyadav533" target="_blank" class="project-link secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <span class="project-category">Interior Design Platform</span>
+                        <h3 class="project-title">Unfiltered Interiors</h3>
+                        <p class="project-description">
+                            An elegant interior design showcase platform featuring stunning portfolios, 
+                            interactive galleries, and modern UI/UX design principles.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Netlify</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://unfilteredinteriors.netlify.app" target="_blank" class="project-link">View Project</a>
+                            <a href="https://github.com/keshavyadav533" target="_blank" class="project-link secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <span class="project-category">Web Application</span>
+                        <h3 class="project-title">Keshav Portfolio V1</h3>
+                        <p class="project-description">
+                            A creative portfolio website showcasing projects and skills with smooth animations, 
+                            interactive elements, and clean design aesthetics.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">Vercel</span>
+                            <span class="tech-tag">GSAP</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://keshavyadav-theta.vercel.app" target="_blank" class="project-link">View Project</a>
+                            <a href="https://github.com/keshavyadav533" target="_blank" class="project-link secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <span class="project-category">Design Platform</span>
+                        <h3 class="project-title">Design Unique Plus</h3>
+                        <p class="project-description">
+                            A creative design platform featuring unique templates, design resources, 
+                            and modern UI components for web designers and developers.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Vercel</span>
+                            <span class="tech-tag">Animations</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://designuniqueplus.vercel.app" target="_blank" class="project-link">View Project</a>
+                            <a href="https://github.com/keshavyadav533" target="_blank" class="project-link secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <span class="project-category">Portfolio Website</span>
+                        <h3 class="project-title">Keshav Portfolio V2</h3>
+                        <p class="project-description">
+                            An enhanced portfolio website with advanced animations, project showcases, 
+                            and interactive user experience demonstrating full-stack capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Netlify</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="https://keshav-port.netlify.app" target="_blank" class="project-link">View Project</a>
+                            <a href="https://github.com/keshavyadav533" target="_blank" class="project-link secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let's Create Something Amazing Together</h3>
+                    <p class="contact-text">
+                        I'm always excited to work on new projects and collaborate with 
+                        talented people. Whether you have a question, a project idea, or just want to say hi, 
+                        feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div class="contact-item-info">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:keshavyadav2005562@gmail.com" class="contact-value">keshavyadav2005562@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🌐</span>
+                            <div class="contact-item-info">
+                                <span class="contact-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/keshavyadav533" target="_blank" class="contact-value">linkedin.com/in/keshavyadav533</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <div class="contact-item-info">
+                                <span class="contact-label">GitHub</span>
+                                <a href="https://github.com/keshavyadav533" target="_blank" class="contact-value">github.com/keshavyadav533</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div class="contact-item-info">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/keshavyadav533" target="_blank" class="social-link">
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/keshavyadav533" target="_blank" class="social-link">
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://twitter.com/keshavyadav533" target="_blank" class="social-link">
+                            <span>Twitter</span>
+                        </a>
+                        <a href="https://keshav-port.netlify.app/blogs" target="_blank" class="social-link">
+                            <span>Blog</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" class="form-input" placeholder="Your Name" required>
+                            <label class="form-label">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-input" placeholder="Your Email" required>
+                            <label class="form-label">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" id="subject" class="form-input" placeholder="Subject" required>
+                            <label class="form-label">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="form-input" rows="5" placeholder="Your Message" required></textarea>
+                            <label class="form-label">Message</label>
+                        </div>
+                        <button type="submit" class="submit-button">
+                            <span class="button-text">Send Message</span>
+                            <span class="button-icon">→</span>
+                        </button>
+                        <div id="form-status" style="margin-top: 20px; text-align: center; display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">
+                Designed & Built by <span class="highlight">Keshav Yadav</span>
+            </p>
+            <p class="footer-copyright">© 2026 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
